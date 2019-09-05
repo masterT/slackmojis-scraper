@@ -23,6 +23,8 @@ npm install --save masterT/slackmojis-scraper
 
 Return a _Promise_ that resolve with an _Array_ of emoji that matches the JSON schema [schemas/emojis.json](schemas/emojis.json).
 
+Usage:
+
 ```js
 cosnt SlackmojisScraper = require ('slackmojis-scraper')
 
@@ -43,14 +45,14 @@ SlackmojisScraper.getEmojis()
 
 ### Downloader
 
-> [examples/download-emojis.js](examples/download-emojis.js)
+> [examples/downloader.js](examples/downloader.js)
 
-Download all the emojis in a directory. By default it will download it in the `./tmp` directory. This pairs well with the [slack-emoji-upload](https://github.com/sgreben/slack-emoji-upload).
+Download all the emojis in a directory, by default it will download it in the `./tmp` directory. This pairs well with the [slack-emoji-upload](https://github.com/sgreben/slack-emoji-upload).
 
 Usage:
 
 ```shell
-node examples/download-emojis.js
+node examples/downloader.js
 ```
 
 Output:

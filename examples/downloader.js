@@ -28,7 +28,7 @@ function promiseMap (collection, func) {
   return aux(collection, [])
 }
 
-function downloadEmojis (dirPath, callbacks) {
+function downloader (dirPath, callbacks) {
   // Create directory if needed.
   if (!fs.existsSync(dirPath)) {
     fs.mkdirSync(dirPath)
@@ -84,7 +84,7 @@ function downloadEmojis (dirPath, callbacks) {
     })
 }
 
-downloadEmojis('./tmp', {
+downloader('./tmp', {
   beforeAll: (emojis) => {
     console.log('Downloading %i emojis in ./tmp directory.', emojis.length)
   },
