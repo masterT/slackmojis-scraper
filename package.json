@@ -1,0 +1,33 @@
+{
+  "name": "slackmojis-scraper",
+  "version": "1.0.0",
+  "description": "A scraper for https://slackmojis.com/",
+  "main": "lib/index.js",
+  "dependencies": {
+    "yolo-scraper": "^0.2.0"
+  },
+  "devDependencies": {
+    "jasmine": "^3.4.0",
+    "standard": "^14.1.0"
+  },
+  "scripts": {
+    "linter": "standard",
+    "linter-fix": "standard --fix",
+    "test": "standard && jasmine"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/masterT/slackmojis-scraper.git"
+  },
+  "keywords": [
+    "scraper",
+    "slack",
+    "emoji"
+  ],
+  "author": "Simon Thiboutôt",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/masterT/slackmojis-scraper/issues"
+  },
+  "homepage": "https://github.com/masterT/slackmojis-scraper#readme"
+}
