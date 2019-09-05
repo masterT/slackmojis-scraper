@@ -30,7 +30,7 @@ SlackmojisScraper.getEmojis()
   .then((emojis) => {
     console.log(emojis[0])
     // {
-    //   title: 'troll',
+    //   name: 'troll',
     //   filename: 'troll.png',
     //   url: 'https://emojis.slackmojis.com/emojis/images/1463602125/429/troll.png?1463602125' }
     // }

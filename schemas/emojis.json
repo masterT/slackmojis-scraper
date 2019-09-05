@@ -1,7 +1,25 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
   "type": "array",
-  "item": {
-    "$ref": "emoji.json"
-  }  
+  "items": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+      "name",
+      "filename",
+      "url"
+    ],
+    "properties": {
+      "name": {
+        "type": "string"
+      },
+      "filename": {
+        "type": "string"
+      },
+      "url": {
+        "type": "string",
+        "format": "uri"
+      }
+    }
+  }
 }
